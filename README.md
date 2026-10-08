@@ -2,7 +2,7 @@
 
 Портфолио-проект: сайт на HTML/CSS/JavaScript, контент-планы для соцсетей, сезонные активности и исследование рынка для кафе-пекарни «Славодолье» (Уфа, сентябрь–октябрь 2026).
 
-**Автор:** [Докучаев Михаил Сергеевич] · [контакт: @Mr_ipadkid / miha.rghi@gmail.com]
+**Автор:** [Докучаев Михаил Сергеевич] · [контакт: @Mr_ipadkid / d0kuchaev.miha@gmail.com]
 
 **Живая версия сайта:** (https://github.com/d0kuchaevmiha-arch/slavodolie-portfolio/blob/main/site/index.html)
 

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Обеды для организаций — Славодолье</title>
+<meta name="description" content="Комплексные обеды для офисов и учебных заведений Уфы: по договору, с документами.">
+<link rel="icon" type="image/png" href="assets/sign-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="header-logo" href="index.html" aria-label="Славодолье, кафе-пекарня — на главную">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Разделы сайта">
+      <a href="bakery.html">Пекарня и доставка</a>
+      <a href="lunch.html" aria-current="page">Обеды для организаций</a>
+      <a href="pies.html">Пироги на заказ</a>
+      <a href="cafe.html">Кафе</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+      <button class="btn-p cart-btn" id="cartBtn" type="button" aria-label="Корзина пекарни">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-label">Корзина пекарни</span>
+        <span class="count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Меню">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero sky">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <span class="tag"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V6l8-3 8 3v14"/><path d="M9 20v-4h6v4"/><path d="M8 9h2M14 9h2M8 12.5h2M14 12.5h2"/></svg></span>Пекарня · для организаций</span>
+      <h1 class="rise d1">Обеды для вашей команды — каждый день в одно время</h1>
+      <p class="lead rise d2">Готовим в нашей пекарне и привозим в офисы и учебные заведения Уфы. Работаем по договору, со счётом и закрывающими документами.</p>
+      <div class="btn-row rise d3"><a class="btn-p btn-lg" href="#request">Оставить заявку</a><a class="btn-s btn-lg" href="#docs">Документы</a></div>
+    </div>
+    <div class="ph ph-43 ph-card photo-in">Фото: наборы обедов в крафт-упаковке на деревянном столе</div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="setsTitle">
+  <div class="wrap">
+    <h2 class="sec-title" id="setsTitle">Наборы</h2>
+    <div class="grid-3">
+      <div class="info-card" style="border:1px solid var(--line)"><h3>[Набор 1 — название]</h3><p>Состав: [уточнить]</p><p><b>Цена за набор: [уточнить]</b></p></div>
+      <div class="info-card" style="border:1px solid var(--line)"><h3>[Набор 2 — название]</h3><p>Состав: [уточнить]</p><p><b>Цена за набор: [уточнить]</b></p></div>
+      <div class="info-card" style="border:1px solid var(--line)"><h3>[Набор 3 — название]</h3><p>Состав: [уточнить]</p><p><b>Цена за набор: [уточнить]</b></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section sky" aria-labelledby="howTitle">
+  <div class="wrap">
+    <h2 class="sec-title" id="howTitle">Как мы работаем</h2>
+    <ol class="steps">
+      <li><span><b>Заявка</b>Оставляете заявку на сайте — это пара минут.</span></li>
+      <li><span><b>Звонок и договор</b>Перезваниваем [срок — уточнить], обсуждаем меню и подписываем договор.</span></li>
+      <li><span><b>График</b>Договариваемся о днях, времени и количестве.</span></li>
+      <li><span><b>Доставка</b>Привозим обеды по графику. Изменить заказ можно до [времени — уточнить].</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="termsTitle">
+  <div class="wrap grid-2">
+    <div>
+      <h2 class="sec-title" id="termsTitle">Условия</h2>
+      <dl class="terms">
+        <div><dt>Минимальный заказ</dt><dd>[уточнить]</dd></div>
+        <div><dt>За сколько заказывать</dt><dd>[уточнить]</dd></div>
+        <div><dt>Доставка</dt><dd>Из пекарни, по графику. Зона и стоимость — [уточнить]</dd></div>
+        <div><dt>Оплата</dt><dd>По счёту для юрлиц и ИП [уточнить условия]</dd></div>
+      </dl>
+    </div>
+    <div id="docs">
+      <h2 class="sec-title">Документы</h2>
+      <dl class="terms">
+        <div><dt>Договор</dt><dd>[уточнить] · <span class="muted">образец для согласования — появится здесь</span></dd></div>
+        <div><dt>Счёт</dt><dd>[уточнить периодичность]</dd></div>
+        <div><dt>Закрывающие</dt><dd>[уточнить: какие документы и когда]</dd></div>
+        <div><dt>Реквизиты</dt><dd><span data-site="legal.name">ИП [ФИО]</span>, ОГРНИП <span data-site="legal.ogrnip">[номер]</span>, ИНН <span data-site="legal.inn">[номер]</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section sky" id="request" aria-labelledby="reqTitle">
+  <div class="wrap" style="max-width:760px">
+    <h2 class="sec-title" id="reqTitle">Заявка на обеды</h2>
+    <form class="form form-card" id="lunchForm" novalidate>
+      <ol class="progress" aria-label="Шаги заявки">
+        <li><span class="lbl">Кто вы</span></li>
+        <li><span class="lbl">Что нужно</span></li>
+      </ol>
+      <div class="wizard-panel" data-step="1">
+        <h3>Кто вы</h3>
+        <label class="field" data-field="org">Организация или учебное заведение<input name="org" autocomplete="organization"></label>
+        <label class="field">ИНН <span class="hint">необязательно — поможет быстрее подготовить договор</span><input name="inn" inputmode="numeric"></label>
+        <label class="field" data-field="person">Контактное лицо<input name="person" autocomplete="name"></label>
+        <div class="field-row">
+          <label class="field" data-field="phone">Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7"></label>
+          <label class="field" data-field="email">E-mail<input name="email" type="email" autocomplete="email"></label>
+        </div>
+        <div class="wizard-nav"><button class="btn-p btn-lg" type="button" data-next>Дальше</button></div>
+      </div>
+      <div class="wizard-panel" data-step="2" hidden>
+        <h3>Что нужно</h3>
+        <label class="field" data-field="address">Адрес доставки<input name="address" autocomplete="street-address"></label>
+        <div class="field-row">
+          <label class="field" data-field="people">Сколько человек<input name="people" type="number" min="1" inputmode="numeric"></label>
+          <label class="field">С какой даты<input name="start" type="date"></label>
+        </div>
+        <label class="field">Как часто
+          <select name="freq"><option>Каждый рабочий день</option><option>Несколько дней в неделю</option><option>Один раз (мероприятие)</option></select>
+        </label>
+        <label class="field">Комментарий<textarea name="comment" rows="3" placeholder="Время доставки, пожелания по меню"></textarea></label>
+        <label class="consent" data-field="consent"><input type="checkbox" name="consent"> <span>Согласен(на) на обработку персональных данных по <a href="privacy.html" target="_blank">политике конфиденциальности</a>. Данные нужны только чтобы связаться по заявке.</span></label>
+        <div class="wizard-nav"><button class="btn-s btn-md" type="button" data-prev>Назад</button><button class="btn-p btn-lg" type="submit">Отправить заявку</button></div>
+      </div>
+      <p class="form-error line-in" role="alert" hidden></p>
+    </form>
+    <div class="form-card thanks" id="lunchThanks" hidden>
+      <div class="bird-circle"><img class="logo-l hop" src="assets/sign-light.png" alt=""><img class="logo-d hop" src="assets/sign-dark.png" alt=""></div>
+      <p><b>Спасибо, заявка у нас.</b> Перезвоним [срок — уточнить], обсудим меню и пришлём договор.</p>
+      <button class="btn-s btn-md" type="button" id="lunchAgain">Отправить ещё одну</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="lfaqTitle">
+  <div class="wrap" style="max-width:880px">
+    <h2 class="sec-title" id="lfaqTitle">Вопросы и ответы</h2>
+    <div class="faq">
+      <details><summary>Можно заменить блюда в наборе?</summary><p>[уточнить]</p></details>
+      <details><summary>Как сдвинуть или отменить доставку?</summary><p>[уточнить: до какого времени и как предупредить]</p></details>
+      <details><summary>Есть пробная поставка?</summary><p>[уточнить]</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="sticky-cta" data-hide-on="#request"><a class="btn-p btn-lg" href="#request">Оставить заявку</a></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-cols">
+    <div class="footer-col brand">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+      <span class="fs15">Пространство тепла и уюта</span>
+      <a class="fs15" href="about.html">О «Славодолье»</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Пекарня · доставка и самовывоз</span>
+      <span>г. Уфа, <span data-site="bakery.address">[адрес пекарни]</span></span>
+      <span class="fs15" data-site="bakery.hours">[часы пекарни]</span>
+      <a data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Кафе · заходите в гости</span>
+      <span>г. Уфа, <span data-site="cafe.address">[адрес кафе]</span></span>
+      <span class="fs15" data-site="cafe.hours">[часы кафе]</span>
+      <a data-phone="cafe" href="contacts.html">[телефон кафе]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Мы в соцсетях</span>
+      <span class="footer-col" data-socials><span>[ВКонтакте]</span><span>[Telegram]</span></span>
+      <span class="fs15" data-email>[e-mail]</span>
+      <a class="fs15" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p><span data-site="legal.name">ИП [ФИО]</span>, ОГРНИП <span data-site="legal.ogrnip">[номер]</span>, ИНН <span data-site="legal.inn">[номер]</span></p>
+    <p>[Реквизиты и режим работы на башкирском языке — перевод уточнить]</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

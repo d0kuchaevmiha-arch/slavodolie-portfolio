@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пекарня и доставка — Славодолье</title>
+<meta name="description" content="Хлеб и выпечка из пекарни «Славодолье» с доставкой по Уфе и самовывозом.">
+<link rel="icon" type="image/png" href="assets/sign-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-cart-bar>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="header-logo" href="index.html" aria-label="Славодолье, кафе-пекарня — на главную">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Разделы сайта">
+      <a href="bakery.html" aria-current="page">Пекарня и доставка</a>
+      <a href="lunch.html">Обеды для организаций</a>
+      <a href="pies.html">Пироги на заказ</a>
+      <a href="cafe.html">Кафе</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+      <button class="btn-p cart-btn" id="cartBtn" type="button" aria-label="Корзина пекарни">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-label">Корзина пекарни</span>
+        <span class="count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Меню">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero sky">
+  <svg class="cloud cloud-a" aria-hidden="true" viewBox="0 0 160 80"><path d="M26 66c-12 0-18-9-13-17 3-5 9-7 14-5 1-14 15-22 28-17 5-12 22-17 34-9 7 4 11 11 11 18 11-3 22 4 22 15 0 9-7 15-16 15z" stroke-width="3" stroke-linejoin="round"/></svg><svg class="cloud cloud-b" aria-hidden="true" viewBox="0 0 160 80"><path d="M26 66c-12 0-18-9-13-17 3-5 9-7 14-5 1-14 15-22 28-17 5-12 22-17 34-9 7 4 11 11 11 18 11-3 22 4 22 15 0 9-7 15-16 15z" stroke-width="3" stroke-linejoin="round"/></svg><svg class="cloud cloud-c" aria-hidden="true" viewBox="0 0 160 80"><path d="M26 66c-12 0-18-9-13-17 3-5 9-7 14-5 1-14 15-22 28-17 5-12 22-17 34-9 7 4 11 11 11 18 11-3 22 4 22 15 0 9-7 15-16 15z" stroke-width="3" stroke-linejoin="round"/></svg>
+  <div class="wrap hero-inner" style="padding-bottom:40px">
+    <div class="hero-text">
+      <span class="tag"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>Пекарня · доставка и самовывоз</span>
+      <h1 class="rise d1">Тёплый хлеб — к вашему столу</h1>
+      <p class="lead rise d2">Все заказы собираем в нашей пекарне: привезём по Уфе или подготовим к самовывозу к нужному времени.</p>
+      <ul class="facts rise d3" aria-label="Условия доставки">
+        <li>Зона: <b data-delivery="zone">[уточнить]</b></li>
+        <li>Минимальный заказ: <b data-delivery="min">[уточнить]</b></li>
+        <li>Доставка: <b data-delivery="fee">[стоимость уточнить]</b></li>
+        <li>Привезём: <b data-delivery="time">[срок уточнить]</b></li>
+      </ul>
+      <div class="btn-row rise d4"><a class="btn-p btn-lg" href="#catalog">Выбрать хлеб и выпечку</a></div>
+    </div>
+    <div class="hero-visual">
+      <div class="ph ph-43 ph-card photo-in">Фото: крафт-пакет со свежим хлебом, тёплый свет</div>
+      <div class="hero-sign sign-in"><img class="logo-l " src="assets/sign-light.png" alt=""><img class="logo-d " src="assets/sign-dark.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<div class="bird-band" aria-hidden="true"></div>
+
+<section class="section" id="catalog" aria-labelledby="catTitle">
+  <div class="wrap">
+    <h2 class="sec-title" id="catTitle">Что испекли</h2>
+    <div class="tabs-wrap"><nav class="tabs" id="tabs" aria-label="Разделы пекарни"></nav></div>
+    <div class="menu-grid cards-a" id="menuGrid"></div>
+  </div>
+</section>
+
+<section class="section band on-band" id="delivery" aria-labelledby="delTitle">
+  <div class="wrap">
+    <h2 class="sec-title" id="delTitle">Доставка и самовывоз</h2>
+    <div class="grid-3">
+      <div class="card info-card"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span><h3>Доставка</h3>
+        <p>Привезём по Уфе. Районы: <span data-delivery="zone">[уточнить]</span>. Стоимость: <span data-delivery="fee">[уточнить]</span>.</p></div>
+      <div class="card info-card"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span><h3>Самовывоз</h3>
+        <p>Из пекарни: г. Уфа, <span data-site="bakery.address">[адрес — уточнить]</span>. Соберём к нужному времени.</p></div>
+      <div class="card info-card"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Когда</h3>
+        <p>Пекарня работает: <span data-site="bakery.hours">[часы — уточнить]</span>. Можно заказать «как можно скорее» или ко времени.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="faqTitle">
+  <div class="wrap" style="max-width:880px">
+    <h2 class="sec-title" id="faqTitle">Вопросы и ответы</h2>
+    <div class="faq">
+      <details><summary>Как оплатить заказ?</summary><p>Оплата при получении: [способ — уточнить]. Перед доставкой мы перезвоним и подтвердим сумму.</p></details>
+      <details><summary>Что, если мой адрес вне зоны доставки?</summary><p>Сайт подскажет это при оформлении. Можно забрать заказ в пекарне или оставить телефон — перезвоним и подумаем вместе.</p></details>
+      <details><summary>Что, если чего-то из заказа не будет?</summary><p>Позвоним и предложим замену до того, как собирать заказ.</p></details>
+      <details><summary>Можно заказать доставку из кафе?</summary><p>Нет — все заказы готовит и привозит пекарня. В кафе можно зайти в гости: <a href="cafe.html">адрес и часы кафе</a>.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-cols">
+    <div class="footer-col brand">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+      <span class="fs15">Пространство тепла и уюта</span>
+      <a class="fs15" href="about.html">О «Славодолье»</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Пекарня · доставка и самовывоз</span>
+      <span>г. Уфа, <span data-site="bakery.address">[адрес пекарни]</span></span>
+      <span class="fs15" data-site="bakery.hours">[часы пекарни]</span>
+      <a data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Кафе · заходите в гости</span>
+      <span>г. Уфа, <span data-site="cafe.address">[адрес кафе]</span></span>
+      <span class="fs15" data-site="cafe.hours">[часы кафе]</span>
+      <a data-phone="cafe" href="contacts.html">[телефон кафе]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Мы в соцсетях</span>
+      <span class="footer-col" data-socials><span>[ВКонтакте]</span><span>[Telegram]</span></span>
+      <span class="fs15" data-email>[e-mail]</span>
+      <a class="fs15" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p><span data-site="legal.name">ИП [ФИО]</span>, ОГРНИП <span data-site="legal.ogrnip">[номер]</span>, ИНН <span data-site="legal.inn">[номер]</span></p>
+    <p>[Реквизиты и режим работы на башкирском языке — перевод уточнить]</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

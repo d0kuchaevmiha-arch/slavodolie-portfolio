@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакты — Славодолье</title>
+<meta name="description" content="Адреса, часы и телефоны кафе и пекарни «Славодолье» в Уфе.">
+<link rel="icon" type="image/png" href="assets/sign-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="header-logo" href="index.html" aria-label="Славодолье, кафе-пекарня — на главную">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Разделы сайта">
+      <a href="bakery.html">Пекарня и доставка</a>
+      <a href="lunch.html">Обеды для организаций</a>
+      <a href="pies.html">Пироги на заказ</a>
+      <a href="cafe.html">Кафе</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+      <button class="btn-p cart-btn" id="cartBtn" type="button" aria-label="Корзина пекарни">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-label">Корзина пекарни</span>
+        <span class="count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Меню">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="section" style="padding-top:40px">
+  <div class="wrap">
+    <h1 class="sec-title">Контакты</h1>
+    <div class="grid-2">
+      <div class="place bakery">
+        <span class="tag"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>Пекарня · доставка и самовывоз</span>
+        <dl>
+          <dt>Адрес</dt><dd>г. Уфа, <span data-site="bakery.address">[адрес пекарни — уточнить]</span></dd>
+          <dt>Часы</dt><dd data-site="bakery.hours">[уточнить]</dd>
+          <dt>Телефон</dt><dd><a data-phone="bakery" href="contacts.html">[телефон пекарни — уточнить]</a></dd>
+        </dl>
+        <div class="btn-row"><a class="btn-p btn-sm" href="bakery.html">Заказать доставку</a><a class="btn-s btn-sm" data-map="bakery" href="contacts.html">Маршрут</a></div>
+      </div>
+      <div class="place cafe">
+        <span class="tag"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3.5c0 1 1 1.5 1 2.5M12 3.5c0 1 1 1.5 1 2.5"/></svg></span>Кафе · заходите в гости</span>
+        <dl>
+          <dt>Адрес</dt><dd>г. Уфа, <span data-site="cafe.address">[адрес кафе — уточнить]</span></dd>
+          <dt>Часы</dt><dd data-site="cafe.hours">[уточнить]</dd>
+          <dt>Телефон</dt><dd><a data-phone="cafe" href="contacts.html">[телефон кафе — уточнить]</a></dd>
+        </dl>
+        <div class="btn-row"><a class="btn-s btn-sm" data-map="cafe" href="contacts.html">Маршрут</a></div>
+      </div>
+    </div>
+    <div class="ph map-ph" id="map" style="margin-top:24px">Карта с двумя точками — кафе и пекарня — появится, когда будут адреса</div>
+  </div>
+</section>
+
+<section class="section milk">
+  <div class="wrap grid-2">
+    <div class="stack">
+      <h2 class="sec-title">На связи</h2>
+      <p style="margin:0">E-mail: <span data-email>[уточнить]</span></p>
+      <div class="stack" data-socials style="gap:6px"><span>[ВКонтакте — уточнить]</span><span>[Telegram — уточнить]</span></div>
+    </div>
+    <div class="stack">
+      <h2 class="sec-title">Реквизиты</h2>
+      <p style="margin:0"><span data-site="legal.name">ИП [ФИО]</span><br>ОГРНИП <span data-site="legal.ogrnip">[номер]</span><br>ИНН <span data-site="legal.inn">[номер]</span></p>
+      <p style="margin:0">[Реквизиты на башкирском языке — перевод уточнить]</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-cols">
+    <div class="footer-col brand">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+      <span class="fs15">Пространство тепла и уюта</span>
+      <a class="fs15" href="about.html">О «Славодолье»</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Пекарня · доставка и самовывоз</span>
+      <span>г. Уфа, <span data-site="bakery.address">[адрес пекарни]</span></span>
+      <span class="fs15" data-site="bakery.hours">[часы пекарни]</span>
+      <a data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Кафе · заходите в гости</span>
+      <span>г. Уфа, <span data-site="cafe.address">[адрес кафе]</span></span>
+      <span class="fs15" data-site="cafe.hours">[часы кафе]</span>
+      <a data-phone="cafe" href="contacts.html">[телефон кафе]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Мы в соцсетях</span>
+      <span class="footer-col" data-socials><span>[ВКонтакте]</span><span>[Telegram]</span></span>
+      <span class="fs15" data-email>[e-mail]</span>
+      <a class="fs15" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p><span data-site="legal.name">ИП [ФИО]</span>, ОГРНИП <span data-site="legal.ogrnip">[номер]</span>, ИНН <span data-site="legal.inn">[номер]</span></p>
+    <p>[Реквизиты и режим работы на башкирском языке — перевод уточнить]</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

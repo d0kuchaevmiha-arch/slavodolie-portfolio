@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О нас — Славодолье</title>
+<meta name="description" content="Кафе-пекарня «Славодолье»: традиции, простота и тепло.">
+<link rel="icon" type="image/png" href="assets/sign-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="header-logo" href="index.html" aria-label="Славодолье, кафе-пекарня — на главную">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Разделы сайта">
+      <a href="bakery.html">Пекарня и доставка</a>
+      <a href="lunch.html">Обеды для организаций</a>
+      <a href="pies.html">Пироги на заказ</a>
+      <a href="cafe.html">Кафе</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+      <button class="btn-p cart-btn" id="cartBtn" type="button" aria-label="Корзина пекарни">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-label">Корзина пекарни</span>
+        <span class="count" id="cartCount" hidden>0</span>
+      </button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Меню">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero milk">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <h1 class="rise d1">Пространство тепла и уюта</h1>
+      <p class="lead rise d2">«Славодолье» — место, где традиции ремесленного хлебопечения встречаются с уютом кофейни. Мы хотим, чтобы вкус и аромат настоящего хлеба собирали людей за общим столом.</p>
+    </div>
+    <div class="hero-visual">
+      <div class="ph ph-43 ph-card photo-in">Фото: пекарь достаёт хлеб из печи</div>
+      <div class="hero-sign sign-in"><img class="logo-l " src="assets/sign-light.png" alt=""><img class="logo-d " src="assets/sign-dark.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="valTitle">
+  <div class="wrap">
+    <h2 class="sec-title" id="valTitle">Во что мы верим</h2>
+    <div class="grid-3">
+      <div class="info-card" style="border:1px solid var(--line)"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Традиции и ремесло</h3><p>Старинные рецепты и уважение к тому, как пекли до нас.</p></div>
+      <div class="info-card" style="border:1px solid var(--line)"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span><h3>Природность и простота</h3><p>Простые натуральные продукты — ничего лишнего.</p></div>
+      <div class="info-card" style="border:1px solid var(--line)"><span class="round-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3.5c0 1 1 1.5 1 2.5M12 3.5c0 1 1 1.5 1 2.5"/></svg></span><h3>Тепло и гостеприимство</h3><p>Уют, душевность и общий стол, за которым всем хватит места.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section sky" aria-labelledby="birdTitle">
+  <div class="wrap grid-2" style="align-items:center">
+    <div class="bird-circle" style="width:220px;height:220px;justify-self:center;background:var(--surface)"><img class="logo-l " src="assets/sign-light.png" alt=""><img class="logo-d " src="assets/sign-dark.png" alt=""></div>
+    <div class="stack">
+      <h2 class="sec-title" id="birdTitle">Почему тетерев</h2>
+      <p style="margin:0">Тетерев — знак силы, свободы и связи с родной землёй. Голубой цвет птицы — это небо и спокойствие, коричневый — хлеб, земля и надёжность.</p>
+      <p style="margin:0">[Пара слов о людях: кто стоит у печи, на какой муке печёте — уточнить.]</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-cols">
+    <div class="footer-col brand">
+      <img class="logo-l" src="assets/wordmark-light.png" alt="Славодолье, кафе-пекарня">
+      <img class="logo-d" src="assets/wordmark-dark.png" alt="Славодолье, кафе-пекарня">
+      <span class="fs15">Пространство тепла и уюта</span>
+      <a class="fs15" href="about.html">О «Славодолье»</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Пекарня · доставка и самовывоз</span>
+      <span>г. Уфа, <span data-site="bakery.address">[адрес пекарни]</span></span>
+      <span class="fs15" data-site="bakery.hours">[часы пекарни]</span>
+      <a data-phone="bakery" href="contacts.html">[телефон пекарни]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Кафе · заходите в гости</span>
+      <span>г. Уфа, <span data-site="cafe.address">[адрес кафе]</span></span>
+      <span class="fs15" data-site="cafe.hours">[часы кафе]</span>
+      <a data-phone="cafe" href="contacts.html">[телефон кафе]</a>
+    </div>
+    <div class="footer-col">
+      <span class="t">Мы в соцсетях</span>
+      <span class="footer-col" data-socials><span>[ВКонтакте]</span><span>[Telegram]</span></span>
+      <span class="fs15" data-email>[e-mail]</span>
+      <a class="fs15" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p><span data-site="legal.name">ИП [ФИО]</span>, ОГРНИП <span data-site="legal.ogrnip">[номер]</span>, ИНН <span data-site="legal.inn">[номер]</span></p>
+    <p>[Реквизиты и режим работы на башкирском языке — перевод уточнить]</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

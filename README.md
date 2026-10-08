@@ -6,8 +6,6 @@
 
 **Живая версия сайта:** (https://github.com/d0kuchaevmiha-arch/slavodolie-portfolio/blob/main/site/index.html)
 
-![Главная страница](screenshots/01-home-desktop.jpg)
-
 ---
 
 ## Что сделано
